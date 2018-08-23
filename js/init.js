@@ -4,7 +4,7 @@ $(document).ready(function(){
        d += 150;
        $(item).delay(d).fadeIn(100);
 }); 
-    if (location.pathname == '/index.html'){
+    if ((location.pathname == '/index.html') || (location.pathname == '/')){
         setTimeout(function(){
             window.location.href='login.html';
         },7000);
