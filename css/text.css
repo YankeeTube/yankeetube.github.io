@@ -1,0 +1,20 @@
+/* Text */
+.init {
+    width: calc(100% - 15px);
+    font-size:20px;
+    color: #FFF;
+    white-space:nowrap;
+    overflow:hidden;
+    padding-left: 15px;
+    margin: 0;
+    line-height: 24px;
+    display: none;
+}
+
+
+.color-blue{ color: #00a8a8;}
+.color-green{ color: #00a800;}
+.color-gray{ color: #2e6a72;}
+.color-yellow{ color: #76b62d;}
+.color-skyblue{ color: #2975a7}
+/* Text */

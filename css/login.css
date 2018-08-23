@@ -1,0 +1,27 @@
+.login-form{
+    position: relative;
+    width:35%;
+    height: 125px;
+    display: flex;
+    transition:all .5s ease;
+}
+.login-form:hover{
+    background-color: #215d9c;
+    cursor: pointer;
+}
+.user-area{
+    width:25%;
+    height: 100%;
+    background: url("../img/baseline_account_box_white_48dp.png") no-repeat center center;
+    background-size: contain;
+}
+.nickName{
+    width:75%;
+    padding-left:30px;
+    height: 100%;
+    font-size: 20px;
+    color: #FFF;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}

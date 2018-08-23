@@ -1,0 +1,67 @@
+
+.first-bg{
+    padding-top:1px;
+    background-color: #000;
+    width:100%;
+    height: 100%;
+    opacity: 0.85;
+}
+
+/* Cursor */
+.blinking-cursor {
+  padding-left:15px;
+  font-weight: 100;
+  font-size: 30px;
+  color: #2E3D48;
+  margin:0;
+  -webkit-animation: .4s blink step-end infinite;
+  -moz-animation: .4s blink step-end infinite;
+  -ms-animation: .4s blink step-end infinite;
+  -o-animation: .4s blink step-end infinite;
+  animation: .45 blink step-end infinite;
+}
+@keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #FFF;
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #FFF;
+  }
+}
+
+@-webkit-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #FFF;
+  }
+}
+
+@-ms-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #FFF;
+  }
+}
+
+@-o-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #FFF;
+  }
+}
+/* Cursor */

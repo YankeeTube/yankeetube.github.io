@@ -10,6 +10,11 @@ p{
     padding-left: 15px;
     color: #FFF;
 }
+a{
+    outline: 0;
+    text-decoration: none;
+}
+
 .header{
     position: absolute;
     top:0;
@@ -17,6 +22,7 @@ p{
     font-size: 20px;
     height: 40px;
     width:100%;
+    background-color: #010101;
     display: flex;
 }
 .timeSequence{
@@ -35,13 +41,12 @@ p{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top:7.55px;
+    padding-top:1px;
 }
 .accessibility{
-    margin-top:5px;
     position: relative;
-    width:36px;
-    height: 90%;
+    width:28px;
+    height: 28px;
     border:2px solid #FFF;
     border-radius: 25px;
     background-color: #e2e3e3;
@@ -100,8 +105,6 @@ p{
     justify-content: center;
 }
 
-
-
 .volume-control-access{
     z-index: 3;
     position: absolute;
@@ -126,40 +129,7 @@ p{
     transform: scale(2);
 }
 
-.login-form{
-    position: relative;
-    width:35%;
-    height: 125px;
-    display: flex;
-    transition:all .5s ease;
-}
-.login-form:hover{
-    background-color: #215d9c;
-}
-.user-area{
-    width:25%;
-    height: 100%;
-    background: url("../img/baseline_account_box_white_48dp.png") no-repeat center center;
-    background-size: contain;
-}
-.nickName{
-    width:75%;
-    padding-left:30px;
-    height: 100%;
-    font-size: 20px;
-    color: #FFF;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-}
 
-.first-bg{
-    padding-top:1px;
-    background-color: #000;
-    width:100%;
-    height: 100%;
-    opacity: 0.85;
-}
 
 /* Cursor */
 .blinking-cursor {

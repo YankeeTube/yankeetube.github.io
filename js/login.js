@@ -38,4 +38,7 @@ $(document).ready(function(){
        alert("Shudown now ...");
         window.location.href='logoff.html';
     });
+    $(".login-form").click(function(){
+        location.href="/home.html";
+    })
 });
