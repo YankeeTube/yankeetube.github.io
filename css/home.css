@@ -13,12 +13,13 @@ p{
 
 .bg{
     background: url("../img/homebg.png") no-repeat center center;
-    background-size: cover;
-    width:100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-size: 100% 100% ;
+}
+.now-open{
+    position: absolute;
+    margin-left:60px;
+    width:67.5px;
+    height: 40px;
 }
 .title-bar{
     z-index: 9999;
@@ -26,15 +27,23 @@ p{
     height: 40px;
     color: #FFF;
     background-color: #465965;
+    cursor: default;
+    transition: .05s all ease;
+    position: fixed;
+    display: none;
 }
 .content{
     width:400px;
     height:400px;
     background-color: #FFF;
+    transition: .05s all ease;
+    position: absolute;
+    display: none;
 }
 .browser-btn{
     width:100px;
     height: 100%;
+    float:right;
     display: flex;
     justify-content: space-around;
     align-content: center;
@@ -48,5 +57,83 @@ p{
     height: 25px;
     border-radius: 25px;
 }
-.minimize{ background-color: #000; }
-.maximize{ background-color: #222; }
+.minimize{ background-color: #000; 
+    background: url("../img/baseline_minimize_white_48dp.png") no-repeat center center;
+    background-size: 20px 20px;
+    cursor:default;
+}
+.maximize{ background-color: #222; 
+    background: url("../img/baseline_launch_white_48dp.png") no-repeat center center;
+    background-size: 20px 20px;
+    cursor:default;
+}
+.close{ 
+    background-color: #222;
+    background: url("../img/baseline_close_white_48dp.png") no-repeat center center;
+    background-size: 20px 20px;
+    cursor:default;
+}
+.content.active{
+    width:100%;
+    height: 100%;
+    top:0 !important;
+    left:0 !important;
+    transition: .25s all ease;
+}
+.title-bar.active{
+    width:100%;
+    transition: .25s all ease;
+}
+
+
+.menu{
+    position: absolute;
+    border-top-right-radius: 7.5px;
+    border-bottom-right-radius: 7.5px;
+    left:0;
+    width:67.5px;
+    height: 75%;
+    background-color: #36474f;
+    opacity: 0.95;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu-icon{
+    width:60px;
+    height: 60px;
+}
+.menu-icon:hover{
+    transition: 0.25s all ease;
+    background-color: #242d34;
+    transform: scale(1.1);
+}
+.directory.active{
+    transition: 0.25s all ease;
+    background-color: #242d34;
+}
+.terminal{
+    background:url("../img/terminal-icon.png") no-repeat center center;
+    background-size: contain;
+}
+.directory{
+    background:url("../img/folder-blue-drag-accept-icon.png") no-repeat center center;
+    background-size: contain;
+}
+.github-icon{
+    background:url("../img/Octocat.png") no-repeat center center;
+    background-size: contain;
+}
+.tistory-icon{
+    background:url("../img/tistory-icon.png") no-repeat center center;
+    background-size: contain;
+}
+.youtube-icon{
+    background:url("../img/youtube-icon.png") no-repeat center center;
+    background-size: contain;
+}
+.gmail-icon{
+    background:url("../img/gmail.png") no-repeat center center;
+    background-size: contain;
+}
