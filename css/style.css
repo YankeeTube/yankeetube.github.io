@@ -100,8 +100,8 @@ a{
     background-color: #2f3437;
     width:100%;
     position: absolute;
-    top:40px;
-    height: calc(100% - 40px);
+    top:0 !important;
+    height: 100% !important;
     display: flex;
     align-items: center;
     justify-content: center;

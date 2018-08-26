@@ -36,7 +36,7 @@ $(document).ready(function(){
     });
     $(".power-img").click(function(){
        alert("Shudown now ...");
-        window.location.href='logoff.html';
+        window.location.href='/logoff.html';
     });
     $(".login-form").click(function(){
         location.href="/home.html";
