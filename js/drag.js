@@ -10,6 +10,7 @@ $(document).ready(function(){
     $(".maximize").on("click",function(){
        $(this).parents("div.content").toggleClass("active");
        $(this).parents("div.title-bar").toggleClass("active");
+        $("div.sub-content").toggleClass("active");
     });
     $(".minimize").on("click",function(){
         $(".content").toggle('200');
