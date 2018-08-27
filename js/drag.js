@@ -8,9 +8,10 @@ $(document).ready(function(){
           handle: '.title-bar',
     });
     $(".maximize").on("click",function(){
-       $(this).parents("div.content").toggleClass("active");
-       $(this).parents("div.title-bar").toggleClass("active");
+        $(this).parents("div.content").toggleClass("active");
+        $(this).parents("div.title-bar").toggleClass("active");
         $("div.sub-content").toggleClass("active");
+        $("div.tree").toggleClass("active");
     });
     $(".minimize").on("click",function(){
         $(".content").toggle('200');
@@ -18,6 +19,15 @@ $(document).ready(function(){
     });
     $(".title-bar").on("dblclick",function(){
         $(this).parents("div.content").toggleClass("active");
+        $("div.sub-content").toggleClass("active");
+        $("div.tree").toggleClass("active");
         $(this).toggleClass("active");
+    });
+    $(".tree > p").on("mouseenter", function(){
+        $(this).children().css({"color" : "#FFFFFF"});
+        $(this).children().addClass("fa-folder-open");
+    }).on("mouseleave", function(){
+        $(this).children().css({"color" : "#858c97;"});
+        $(this).children().removeClass("fa-folder-open");
     });
 });

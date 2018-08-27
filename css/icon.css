@@ -1,0 +1,9 @@
+.title-bar > p > i{
+    margin-right: 7.5px;
+}
+.tree > p > i{
+    font-size: 18px;
+    color: #858c97;
+    margin-right: 7.5px;
+    margin-left:10px;
+}

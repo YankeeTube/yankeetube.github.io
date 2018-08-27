@@ -12,7 +12,7 @@ p{
 }
 
 .bg{
-    background: url("../img/homebg.png") no-repeat center center;
+    background: url("../img/bgss.jpg") no-repeat center center;
     background-size: 100% 100% ;
     top:40px !important;
     height: calc(100% - 40px) !important;
@@ -25,10 +25,10 @@ p{
 }
 .title-bar{
     z-index: 9999;
-    width:700px;
+    width:800px;
     height: 40px;
     color: #FFF;
-    background-color: #465965;
+    background-color: #2d353e;
     cursor: default;
     transition: .05s all ease;
     position: fixed;
@@ -45,7 +45,7 @@ p{
     float:left;
 }
 .content{
-    width:700px;
+    width:800px;
     height:400px;
     background-color: #FFF;
     transition: .05s all ease;
@@ -53,9 +53,10 @@ p{
     display: none;
 }
 .sub-content{
-    width:600px;
+    width:800px;
     margin-top:40px;
     height:360px;
+    background: transparent;
 }
 .browser-btn{
     width:100px;
@@ -109,21 +110,26 @@ p{
 
 .tree{
     border-right: 1px solid blue;
-    width:30%;
-    height: 100%;
-    text-align: left;
+    width:200px;
+    height: calc(100% - 10px);
     padding-top:10px;
+    text-align: left;
+    background-color: #333943;
+    opacity: 0.95;
 }
 .tree > p{
-    color: #000; 
+    color: #FFF; 
     width:100%;
     font-size: 12px;
-    padding:0 0 0 20px;
     letter-spacing: 0.25px;
+    padding:0 0 0 0 !important;
+    line-height: 28px;
+    height: 28px;
 }
-
-
-
+.tree > p:hover, .tree > p > i:hover{
+    background-color: #5294e2;
+    color: #FFF;
+}
 
 .menu{
     position: absolute;
@@ -177,3 +183,25 @@ p{
     background-size: contain;
 }
 
+
+
+.desktop{
+    width:320px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.desktop > div > i{
+    color:#5294e2;
+    font-size: 72px;
+    margin-left:10px;
+}
+.desktop > div > p{
+    margin:0;
+    text-align: center;
+}
+.desktop >div:nth-child(n){
+    text-align: center;
+}
