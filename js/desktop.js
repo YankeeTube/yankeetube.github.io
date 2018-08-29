@@ -5,9 +5,6 @@ $(document).ready(function(){
     $(".tree > p").on("click",function(){
         click_leftmenu($(this));
     });
-//   $($(".desktop > div:nth-child(1)")[0]).on("click",function(){
-//       click_Project();
-//   });
 });
 
 function click_desktop(item){
