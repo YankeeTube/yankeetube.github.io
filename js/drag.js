@@ -27,7 +27,10 @@ $(document).ready(function(){
         $(this).children().css({"color" : "#FFFFFF"});
         $(this).children().addClass("fa-folder-open");
     }).on("mouseleave", function(){
-        $(this).children().css({"color" : "#858c97;"});
-        $(this).children().removeClass("fa-folder-open");
+        if ($(this).hasClass('active') == false){
+            $(this).children().css({"color" : "#858c97;"});
+            $(this).children().removeClass("fa-folder-open");
+        }
+        
     });
 });

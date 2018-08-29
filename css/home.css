@@ -35,14 +35,31 @@ p{
     display: none;
     text-align: center;
 }
-.title-bar > p{
+.title-bar > div:nth-child(1){
 /*    padding-left:100px;*/
-    margin:7.5px 0 0 75px;
-    width:calc(100% - 200px);
+    margin:0 0 0 0;
+    padding-top: 7.5px;
+    width:100%;
+    text-align: center;
     line-height: 24px;
     height: 40px;
     font-size: 20px;
     float:left;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.title-bar > div > i{
+    margin-right: 7.5px;
+    text-align: center;
+    float:left;
+}
+.title-bar > div > p{
+    width:auto;
+    float:left;
+    text-align: center;
+    margin:0;
+    padding:0;
 }
 .content{
     width:800px;
@@ -59,9 +76,11 @@ p{
     background: transparent;
 }
 .browser-btn{
+    position: absolute;
+    right: 0;
+    z-index: 9999;
     width:100px;
     height: 100%;
-    float:right;
     display: flex;
     justify-content: space-around;
     align-content: center;
@@ -126,7 +145,7 @@ p{
     line-height: 28px;
     height: 28px;
 }
-.tree > p:hover, .tree > p > i:hover{
+.tree > p:hover, .tree > p > i:hover, .tree > p.active{
     background-color: #5294e2;
     color: #FFF;
 }
