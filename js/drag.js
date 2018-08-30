@@ -31,6 +31,14 @@ $(document).ready(function(){
             $(this).children().css({"color" : "#858c97;"});
             $(this).children().removeClass("fa-folder-open");
         }
-        
+    });
+    $(".current-folder-content > div > div").on("mouseenter", function(){
+        $(this).children('i').css({"color" : "#FFFFFF"});
+        $(this).children('i').addClass("fa-folder-open");
+    }).on("mouseleave", function(){
+        if ($(this).hasClass('active') == false){
+            $(this).children('i').css({"color" : "#5294e2;"});
+            $(this).children('i').removeClass("fa-folder-open");
+        }    
     });
 });

@@ -28,7 +28,7 @@ p{
     width:800px;
     height: 40px;
     color: #FFF;
-    background-color: #2d353e;
+    background-color: #353945;
     cursor: default;
     transition: .05s all ease;
     position: fixed;
@@ -36,7 +36,6 @@ p{
     text-align: center;
 }
 .title-bar > div:nth-child(1){
-/*    padding-left:100px;*/
     margin:0 0 0 0;
     padding-top: 7.5px;
     width:100%;
@@ -70,10 +69,58 @@ p{
     display: none;
 }
 .sub-content{
+    position: relative;
     width:800px;
     margin-top:40px;
     height:360px;
     background: transparent;
+}
+.current-folder-content{
+    position: absolute;
+    background-color: #404552;
+    top:0;
+    right:0;
+    float:right;
+    width: calc(100% - 200px);
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    z-index: 9999;
+}
+.current-folder-content > div{
+    width:100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.current-folder-content > div > div{
+    height: 105px;
+    margin:0;
+    padding:0;
+    flex:1;
+    width:auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.current-folder-content > div > div:hover{
+    transition: 0.25s all ease;
+    color: #FFF;
+    background-color: #242d34;
+    transform: scale(0.75);
+}
+.current-folder-content > div > div > i {    
+    font-size:60px;
+    color: #5294e2;
+}
+.current-folder-content > div > div > p {
+    color: #FFF;
+    padding:0;
+    margin:0;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 550;
 }
 .browser-btn{
     position: absolute;
@@ -133,8 +180,7 @@ p{
     height: calc(100% - 10px);
     padding-top:10px;
     text-align: left;
-    background-color: #333943;
-    opacity: 0.95;
+    background-color: #353945;
 }
 .tree > p{
     color: #FFF; 
@@ -205,22 +251,30 @@ p{
 
 
 .desktop{
-    width:320px;
+    width:400px;
     height: 400px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 .desktop > div > i{
     color:#5294e2;
     font-size: 72px;
-    margin-left:10px;
 }
 .desktop > div > p{
     margin:0;
+    padding: 0;
     text-align: center;
 }
 .desktop >div:nth-child(n){
     text-align: center;
+}
+.desktop > div{
+    width:108px;
+}
+.desktop > div:hover{
+    transition: 0.25s all ease;
+    background-color: #242d34;
+    transform: scale(1.2);
 }
