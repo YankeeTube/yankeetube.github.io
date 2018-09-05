@@ -1,15 +1,25 @@
 $(document).ready(function(){
     $(".directory").on("click",function(){
         if (($(".content").css("display") == "none") && ($(".directory").hasClass('active') == true)){
+            $(".title-bar").fadeToggle('fast');
+            $(".content").fadeToggle('fast');
+            
+//            $(".tree > p:nth-child(1)").addClass('active');
+//            $(".tree > p:nth-child(1) > i").addClass('active');
+//            $(".tree > p:nth-child(1) > i").css({"color":"#FFFFFFF"});
+//            $(".title-bar > div > p").text("Desktop");
+        }
+        else if ($(".tree > p").hasClass('active') == true){
             $(".content").fadeToggle('fast');
             $(".title-bar").fadeToggle('fast');
-            $(".title-bar > div > p").text("Desktop");
         }
         else{
-            $(this).toggleClass("active");
+            $(this).addClass("active");
             $(".content").fadeToggle('fast');
             $(".title-bar").fadeToggle('fast');
-            $(".title-bar > div > p").text("Desktop");
+            $(".tree > p:nth-child(1)").addClass('active');
+            $(".tree > p:nth-child(1) > i").css({"color":"#FFFFFF"});
+//            $(".title-bar > div > p").text("Desktop");
         }
     });
     

@@ -34,7 +34,10 @@ $(document).ready(function(){
     });
     $(".current-folder-content > div > div").on("mouseenter", function(){
         $(this).children('i').css({"color" : "#FFFFFF"});
-        $(this).children('i').addClass("fa-folder-open");
+        if ($(this).children('i').hasClass('fa-folder') == true){
+            $(this).children('i').addClass("fa-folder-open");    
+        }
+        
     }).on("mouseleave", function(){
         if ($(this).hasClass('active') == false){
             $(this).children('i').css({"color" : "#5294e2;"});

@@ -7,14 +7,30 @@ $(document).ready(function(){
     });
     $(".current-folder-content > div >div").on("click",function(){
         click_folder($(this));
-    })
+    });
 });
 
+function disable_leftmenu(){
+    $(".tree").each(function(){
+       $(this).children().removeClass('active');
+       $(this).children().children().css({"color" : "#858c97;"});
+       $(this).children().children().removeClass("fa-folder-open");
+    });
+}
+
 function click_desktop(item){
-    console.log(item.index());
-    $(".directory").toggleClass("active");
-    $(".content").fadeToggle('fast');
-    $(".title-bar").fadeToggle('fast');
+    disable_leftmenu();
+    if (($(".content").css("display") == "none") && ($(".directory").hasClass('active') == false)){
+        $(".content").fadeToggle('fast');
+        $(".title-bar").fadeToggle('fast');
+        $(".directory").addClass('active');
+    }
+    else if (($(".content").css("display") == "none") && ($(".directory").hasClass('active') == true)){
+        $(".content").fadeToggle('fast');
+        $(".title-bar").fadeToggle('fast');
+    }
+        
+    
     $(".title-bar > div > p").text(item.children('p').text());
     var icon = ".tree > p:nth-child(" + Number(item.index() +1) + ") > i";
     var p = ".tree > p:nth-child(" + Number(item.index() +1) + ")";
@@ -28,7 +44,7 @@ function click_desktop(item){
     else{
         $(this).hide();
     }
-    });
+  });
 }
 
 function click_leftmenu(item){
