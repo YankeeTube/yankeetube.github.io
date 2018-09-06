@@ -2,11 +2,33 @@ $(document).ready(function(){
 //    $(".title-bar").draggable({
 //        containment : 'parent' // 부모요소 안에 종속
 //    });
+    $(".viewer").draggable({
+          containment: 'parent', 
+          scroll: false, 
+          handle: '.viewer-title-bar',
+    });
     $(".content").draggable({
           containment: 'parent', 
           scroll: false, 
           handle: '.title-bar',
     });
+    $(".viewer-maximize").on("click",function(){
+        $(this).parents("div.viewer").toggleClass("active");
+        $(this).parents("div.viewer-title-bar").toggleClass("active");
+        $("div.sub-content").toggleClass("active");
+        $("div.tree").toggleClass("active");
+    });
+    $(".viewer-minimize").on("click",function(){
+        $(".viewer").toggle('200');
+//        $(".viewer-title-bar").toggle('300');
+    });
+    $(".viewer-title-bar").on("dblclick",function(){
+        $(this).parents("div.viewer").toggleClass("active");
+        $("div.sub-content").toggleClass("active");
+        $("div.tree").toggleClass("active");
+        $(this).toggleClass("active");
+    });
+
     $(".maximize").on("click",function(){
         $(this).parents("div.content").toggleClass("active");
         $(this).parents("div.title-bar").toggleClass("active");

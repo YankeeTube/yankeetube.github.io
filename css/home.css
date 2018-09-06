@@ -24,7 +24,7 @@ p{
     height: 40px;
 }
 .title-bar{
-    z-index: 9999;
+    z-index: 1;
     width:800px;
     height: 40px;
     color: #FFF;
@@ -61,6 +61,7 @@ p{
     padding:0;
 }
 .content{
+    z-index: 1;
     width:800px;
     height:400px;
     background-color: #FFF;
@@ -69,6 +70,7 @@ p{
     display: none;
 }
 .sub-content{
+    z-index: 1;
     position: relative;
     width:800px;
     margin-top:40px;
@@ -86,7 +88,7 @@ p{
     display: flex;
     justify-content: space-around;
     align-content: center;
-    z-index: 9999;
+    z-index: 1;
 }
 .current-folder-content > div{
     width:100%;
@@ -177,6 +179,7 @@ p{
 }
 
 .tree{
+    z-index: 1;
     border-right: 1px solid blue;
     width:200px;
     height: calc(100% - 10px);
@@ -185,6 +188,7 @@ p{
     background-color: #353945;
 }
 .tree > p{
+    z-index: 1;
     color: #FFF; 
     width:100%;
     font-size: 12px;

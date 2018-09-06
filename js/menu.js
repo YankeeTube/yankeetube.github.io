@@ -3,11 +3,6 @@ $(document).ready(function(){
         if (($(".content").css("display") == "none") && ($(".directory").hasClass('active') == true)){
             $(".title-bar").fadeToggle('fast');
             $(".content").fadeToggle('fast');
-            
-//            $(".tree > p:nth-child(1)").addClass('active');
-//            $(".tree > p:nth-child(1) > i").addClass('active');
-//            $(".tree > p:nth-child(1) > i").css({"color":"#FFFFFFF"});
-//            $(".title-bar > div > p").text("Desktop");
         }
         else if ($(".tree > p").hasClass('active') == true){
             $(".content").fadeToggle('fast');
@@ -19,10 +14,13 @@ $(document).ready(function(){
             $(".title-bar").fadeToggle('fast');
             $(".tree > p:nth-child(1)").addClass('active');
             $(".tree > p:nth-child(1) > i").css({"color":"#FFFFFF"});
-//            $(".title-bar > div > p").text("Desktop");
         }
     });
-    
+    $(".viewer-close").on("click",function(){
+//        $(".directory").toggleClass("active");
+        $(".viewer").toggle('200');
+//        $(".viewer-title-bar").toggle('300');
+    });
     $(".close").on("click",function(){
         $(".directory").toggleClass("active");
         $(".content").toggle('200');
