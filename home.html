@@ -8,6 +8,9 @@
         <link rel="stylesheet" type="text/css" href="./css/home.css">
         <link rel="stylesheet" type="text/css" href="./css/icon.css">
         <link rel="stylesheet" type="text/css" href="./css/view.css">
+        <link rel="stylesheet" type="text/css" href="./css/slide.css">
+        <link rel="stylesheet" href="./css/font-awesome.min.css">
+
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
 
@@ -15,15 +18,19 @@
         <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        
 <!--        JS IN        -->
         <script src="./js/drag.js"></script>
         <script src="./js/menu.js"></script>
+        <script src="./js/script.js"></script>
         <script src="./js/login.js"></script>
         <script src="./js/device.js"></script>
         <script src="./js/viewer.js"></script>
         <script src="./js/desktop.js"></script>
     </head>
-    <body>
+    <body onload="sliderTimer()">
     <div class="header">
         <div class="now-open"></div>
         <div class="timeSequence"></div>
@@ -89,7 +96,28 @@
                 <div class="viewer-sub-content">
                     <div>
                         <div>
+                            <div class="cover-slide">
+                                <div id="slider">
+                                    <div class="icon" id="left">
+                                        <i class="fa fa-angle-left" onclick="prev()"></i>
+                                    </div>
+                                    <div class="overlay">
+                                    <h2 id="sliderHeader">Loading...</h2>
+                                    <p id="sliderPara">Wait a Seconds!</p> 
+                                    </div>
+                                    <div class="icon" id="right">
+                                        <i class="fa fa-angle-right" onclick="next()"></i>
+                                    </div>
+                                </div>
+                            </div>
                             <p>Author : GM Yankee</p>
+                            <p>Customizing : GM Yankee</p>
+                            <p>Date of production : 2018.08</p>
+                            <p>Open source used : 
+                                <a href="https://insight.is/" target="_blank">Insight</a>
+                                <span> / </span>
+                                <a href="https://github.com/bitpay/bitcore-lib" target="_blank">Bitcore</a>
+                            </p>
                         </div>
                     </div>
                 </div>

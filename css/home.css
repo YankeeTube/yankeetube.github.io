@@ -180,9 +180,9 @@ p{
 
 .tree{
     z-index: 1;
-    border-right: 1px solid blue;
     width:200px;
-    height: calc(100% - 10px);
+/*    height: calc(100% - 10px);*/
+    height: 100%;
     padding-top:10px;
     text-align: left;
     background-color: #353945;

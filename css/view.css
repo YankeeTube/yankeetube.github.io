@@ -5,7 +5,6 @@
     height: 90%;
     z-index: 3;
     background-color: #cfcfcf;
-    overflow-y: auto;
 }
 .viewer-title-bar{
     z-index: 3;
@@ -82,8 +81,10 @@
 .viewer-sub-content{
     position: relative;
     width:100%;
-    margin-top: 40px;
-    height: calc(100% - 40px);
+/*    margin-top: 40px;*/
+/*    height: calc(100% - 40px);*/
+    height: 100%;
+    overflow-y: auto;
 }
 .viewer-sub-content > div{
     position: relative;
@@ -95,6 +96,84 @@
     height: 100%;
 }
 .viewer-sub-content > div > div > p{
-    padding:10px 0 0 10px;
+    padding:7.5px 0 0 5%;
     color: #000;
+}
+
+
+/* Slide */
+.cover-slide{
+    position: relative;
+    margin: 75px 0 0 5%;
+    width:90%;
+    height: 400px;
+}
+
+#slider
+{
+    position: absolute;
+    width: 100%;
+	height: 400px;
+	background:url('../img/load.gif') no-repeat center center;
+	background-size: cover;
+	-webkit-transition: background 1s ;
+}
+
+#slider:after
+{
+	position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    z-index:1;
+	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+}
+
+.icon
+{
+	font-size: 50px;
+	color: #fff;
+	position: relative;
+	z-index: 3;
+}
+
+#left
+{
+    height: 100%;
+    margin: 0 0 0 30px;
+	float: left;
+    position: absolute;
+}
+#left > i{
+    margin-top: 175px;
+}
+
+#right{
+    position: absolute;
+    top:0;
+    right: 0;
+    height: 100%;
+	margin: 0 30px 0 0;
+}
+#right > i{
+    margin-top: 175px;
+}
+
+.overlay{
+    width:100%;
+}
+.overlay >  h2, .overlay > p
+{
+	color: #fff;
+	text-align: center;
+	z-index: 3;
+	position: relative;
+}
+
+.overlay >  h2
+{
+	font-size: 52px;
+	padding-top:160px;
 }
