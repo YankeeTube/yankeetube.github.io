@@ -1,14 +1,17 @@
+<!DOCTYPE html>
 <html>
     <head>
 <!--        <meta http-equiv="refresh" content="50">-->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 <!--        CSS        -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="./css/style.css">
         <link rel="stylesheet" type="text/css" href="./css/home.css">
         <link rel="stylesheet" type="text/css" href="./css/icon.css">
         <link rel="stylesheet" type="text/css" href="./css/view.css">
         <link rel="stylesheet" type="text/css" href="./css/slide.css">
+        <link rel="stylesheet" type="text/css" href="./css/overclass.css">
         <link rel="stylesheet" href="./css/font-awesome.min.css">
 
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
@@ -18,7 +21,6 @@
         <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
         
 <!--        JS IN        -->
@@ -110,14 +112,59 @@
                                     </div>
                                 </div>
                             </div>
-                            <p>Author : GM Yankee</p>
-                            <p>Customizing : GM Yankee</p>
-                            <p>Date of production : 2018.08</p>
-                            <p>Open source used : 
-                                <a href="https://insight.is/" target="_blank">Insight</a>
-                                <span> / </span>
-                                <a href="https://github.com/bitpay/bitcore-lib" target="_blank">Bitcore</a>
-                            </p>
+                            <div class="summarize">
+                                <p>Project <span>Block Explorer</span></p>
+                                <p>FROM
+                                    <span>
+                                        <a href="http://fourthblockchain.org" target="_blank">SOOMPAY KOREA
+                                        </a>
+                                    </span>
+                                </p>
+                                <p>Date of production<span>2018.08</span></p>
+                            </div>
+                            <div class="summarize2 summarize">
+                                <p>Position<span>Engineer</span></p>
+                                <p>ROLE<span>Custom Develop & Error handling</span></p>
+                            </div>
+                            <div class="moreBtn">
+                                  <a href="javascript:void(0);" class="morebutton">
+                                  <svg width="277" height="62">
+                                    <defs>
+                                        <lineargradient id="grad1">
+                                            <stop offset="0%" stop-color="#FF8282"/>
+                                            <stop offset="100%" stop-color="#E178ED" />
+                                        </lineargradient>
+                                    </defs>
+                                     <rect x="5" y="5" rx="25" fill="none" stroke="url(#grad1)" width="266" height="50"></rect>
+                                  </svg>
+                                <span>M O R E</span>
+                                </a>
+                            </div>
+                            <!--
+                                <p>Open source used<span>
+                                    <a href="https://insight.is/" target="_blank">Insight</a>
+                                    <span> / </span>
+                                    <a href="https://github.com/bitpay/bitcore-lib" target="_blank">Bitcore</a>
+                                    </span> 
+                                </p>
+-->
+                            <div class="overClass">
+                                <div class="descript">
+                                    <p>Description</p>
+                                    <p>Block Explorer Custom && Error Handling</p>
+                                    <p><a href="http://fourthblockchain.org" target="_blank">SOOMPAY Korea</a> 의 자사 코인인 SOOM Coin의 블록 생성 및 거래 추적등을 위해 개발한 블록 탐색기 입니다.</p>
+                                    <p>Bitpay에서 오픈소스 MIT 라이센스로 제공하는
+                                        <a href="https://github.com/bitpay/bitcore" target="_blank">Bitcore</a>와 <a href="https://github.com/bitpay/insight-api" target="_blank">Insight</a>를 활용하여 개발하였습니다.
+                                    </p>
+                                    <br/>
+                                    <p>촉박한 작업기간과 Node JS를 잘 모르는 극단적인 상황이었기에 더욱 애착이 느껴지는 작품입니다.</p>
+                                    <br/>
+                                    <p>공개된 코드상에는 이미 처리되지 않은 자잘한 오류조차 많았으며, 일단 붙이는 것에 초점을 두었으며,</p>
+                                    <p>Insight에서 제공하는 로컬 실행 동기화 방식이 아닌 Google 검색을 통해 얻은 정보로 RPC 연결 방식을 지향하였고</p>
+                                    <p>예상보다 빠른 작업속도로 인하여 Insight-UI 자체의 고질적 문제인 특정 해상도 이하로 떨어질 경우 첫번째 지갑주소가 누락되는 현상을 수정하였습니다.</p>
+                                    <p>UI는 해당되는 텍스트를 변경하여 진행한 뒤, 같은 내용 다른느낌을 주기 위해 색상 및 로고를 변경하였습니다.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

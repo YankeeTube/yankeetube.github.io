@@ -1,7 +1,12 @@
 $(document).ready(function(){
     $('.carousel').carousel({
-  interval: 2000
-})
+        interval: 2000
+    });
+    $(".moreBtn").on("click",function(event){
+       $(".overClass").css({"display":"block"});
+        event.preventDefault();
+        $('.viewer-sub-content').animate({scrollTop:$(this).offset().top}, 1000);
+    });
     $(".viewer, .viewer-title-bar").on("click",function(){
         viewerClick();
     });

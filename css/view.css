@@ -81,30 +81,50 @@
 .viewer-sub-content{
     position: relative;
     width:100%;
-/*    margin-top: 40px;*/
-/*    height: calc(100% - 40px);*/
-    height: 100%;
+    margin-top: 40px;
+    height: calc(100% - 40px);
+/*    height: 100%;*/
     overflow-y: auto;
 }
 .viewer-sub-content > div{
-    position: relative;
+    position: absolute;
+    top: 0;
     width:100%;
     height: 100%;
 }
 .viewer-sub-content > div > div{
+    position: absolute;
+    top: 0;
     width:100%;
     height: 100%;
 }
-.viewer-sub-content > div > div > p{
-    padding:7.5px 0 0 5%;
-    color: #000;
+.summarize{
+    margin: 0 5% 0 5%;
+    width:90%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
-
+.summarize > p{
+    padding:7.5px 0 0 0;
+    margin: 0 1.8em 0 0;
+    color: rgba(0,0,0,0.6);
+    font-size: 16px;
+}
+.summarize > p > span{
+    font-size: 20px;
+    color: #000;
+    margin-left: 1em;
+}
+.summarize2 > p{
+    margin: 0 4.6em 0 0;
+}
 
 /* Slide */
 .cover-slide{
     position: relative;
-    margin: 75px 0 0 5%;
+    margin: 3em 0 0 5%;
     width:90%;
     height: 400px;
 }
@@ -176,4 +196,61 @@
 {
 	font-size: 52px;
 	padding-top:160px;
+}
+
+.moreBtn{
+    position: absolute;
+    bottom: 20px;
+    width:100%;
+    height: 62px;
+    display: flex;
+    justify-content: center;
+}
+.morebutton {
+    position: relative;
+    display: inline-block;
+    width: 277px;
+    height: 50px;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: transparent;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size:24px;
+    letter-spacing: 0.045em;
+    text-decoration:none!important;
+}
+
+.morebutton svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.morebutton svg rect {
+    stroke-width: 4;
+    stroke-dasharray: 353, 0;
+    stroke-dashoffset: 0;
+    -webkit-transition: all 600ms ease;
+    transition: all 600ms ease;
+}
+
+.morebutton span{
+  background: rgb(255,130,130);
+  background: -moz-linear-gradient(left,  rgba(255,130,130,1) 0%, rgba(225,120,237,1) 100%);
+  background: -webkit-linear-gradient(left,  rgba(255,130,130,1) 0%,rgba(225,120,237,1) 100%);
+  background: linear-gradient(to right,  rgba(255,130,130,1) 0%,rgba(225,120,237,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8282', endColorstr='#e178ed',GradientType=1 );
+  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.morebutton:hover svg rect {
+    stroke-width: 4;
+    stroke-dasharray: 196, 543;
+    stroke-dashoffset: 437;
 }
