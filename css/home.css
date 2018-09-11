@@ -155,7 +155,7 @@ p{
     background-size: 20px 20px;
     cursor:default;
 }
-.close{ 
+.closed{ 
     background-color: #222;
     background: url("../img/baseline_close_white_48dp.png") no-repeat center center;
     background-size: 20px 20px;

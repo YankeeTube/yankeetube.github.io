@@ -1,17 +1,44 @@
-var imgadr= ['images/5.jpg','images/7.jpg','images/8.jpg','images/4.jpg'];
-var headArray= ['First Heading','Second Heading', 'Third Heading', 'Last heading'];
-var paraArray= ['First paragraph is awesome!',
-				'Second paragraph goes here!', 
-				'Third paragraph for you',
-				 'Last but not least important paragraph!'];
+//Static
+var title_list = ["blockexplorer","miningpool","unusedcssremove","automatedpricetoi.c.o","vulnerabilitychecktool","websitecheckvulnerabilities","kakaotalkrestoretool","coupangsellerautomation","blogautopostaftercrawl","autoincreaseviewstoc.g.v"];
 var cnt= 0;
 var timer;
-//gradient
-//var slider= document.getElementById('slider');??  add script at the end of html?
-// onload body ----or---- call the function at the beginning of script?-> script must be top or buttom?  
+var imgadr;
+var headArray;
+var paraArray;
+var now;
+// 반복
+$(document).ready(function(){
+    setInterval(parserTitle,1000);
+});
+
+function parserTitle(){
+    var title = $(".viewer-title-bar > div > p").text().replace(/ /gi, "").toLowerCase();
+
+    var now_index = title_list.indexOf($(".viewer-title-bar > div > p").text().replace(/ /gi, "").toLowerCase());
+    console.log(title);
+    
+    if (now_index == 0){
+        imgadr= ['img/project/blockexplorer/home.jpg','img/project/blockexplorer/blocks.jpg','img/project/blockexplorer/status.jpg','img/project/blockexplorer/api.jpg'];
+        headArray= ['HOME','BLOCKS', 'STATUS', 'JSON API'];
+        paraArray= ['Bitcore Insight Block Explorer Main Page.',
+            'Current Cryptocurrency view all Blocks', 
+            'Current Cryptocurrency view information Status',
+            'Insight-api'];
+        
+    }
+    else if (now_index == 1){        
+        imgadr= ['img/project/miningpool/login.jpg','img/project/miningpool/home.jpg','img/project/miningpool/dashboard.jpg','img/project/miningpool/api.jpg'];
+        headArray= ['LOGIN','HOME', 'DASHBOARD', 'JSON API'];
+        paraArray= ['PPLNS Mining Pool Login Page.',
+            'PPLNS Mining Pool Home(index)', 
+            'PPLNS Mining Pool and Miner Status',
+            'PPLNS Global Status'];
+    }
+}
+
 function sliderTimer()
 {
-  timer= setInterval(slider, 3500);
+  timer= setInterval(slider, 2500);
 }
 
 function slider()

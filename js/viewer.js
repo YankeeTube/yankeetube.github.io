@@ -20,6 +20,13 @@ $(document).ready(function(){
     
     $("div.current-folder-content > div > div").on("click",function(){
         if ($(".viewer").css("display") == "none"){
+//            console.log($(this).index());
+//            if ($(this).index() == 0){
+//                slider($(this).index());
+//            }
+//            else if($(this).index() == 1){
+//                slider($(this).index());
+//            }
             $(".viewer").addClass('opend');
             $(".viewer").fadeToggle("fast");
             $(".viewer-title-bar").children('div').children('i').attr('class',$(this).children('i').attr('class'));
@@ -56,10 +63,19 @@ function contentClick(){
         }
     }
 }
-
-var imgadr= ['img/project/blockexplorer/home.jpg','img/project/blockexplorer/blocks.jpg','img/project/blockexplorer/status.jpg','img/project/blockexplorer/api.jpg'];
-var headArray= ['HOME','BLOCKS', 'STATUS', 'JSON API'];
-var paraArray= ['Bitcore Insight Block Explorer Main Page.',
-    'Current Cryptocurrency view all Blocks', 
-    'Current Cryptocurrency view information Status',
-    'Insight-api'];
+function indexzero(){
+    var imgadr= ['img/project/blockexplorer/home.jpg','img/project/blockexplorer/blocks.jpg','img/project/blockexplorer/status.jpg','img/project/blockexplorer/api.jpg'];
+    var headArray= ['HOME','BLOCKS', 'STATUS', 'JSON API'];
+    var paraArray= ['Bitcore Insight Block Explorer Main Page.',
+        'Current Cryptocurrency view all Blocks', 
+        'Current Cryptocurrency view information Status',
+        'Insight-api'];
+}
+function indexone(){
+    var imgadr= ['img/project/miningpool/login.jpg','img/project/miningpool/home.jpg','img/project/miningpool/dashboard.jpg','img/project/miningpool/api.jpg'];
+    var headArray= ['HOME','BLOCKS', 'STATUS', 'JSON API'];
+    var paraArray= ['Bitcore Insight Block Explorer Main Page.',
+        'Current Cryptocurrency view all Blocks', 
+        'Current Cryptocurrency view information Status',
+        'Insight-api'];
+}
