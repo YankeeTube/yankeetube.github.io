@@ -18,7 +18,7 @@ function parserTitle(){
     console.log(title);
     
     if (now_index == 0){
-        imgadr= ['img/project/blockexplorer/home.jpg','img/project/blockexplorer/blocks.jpg','img/project/blockexplorer/status.jpg','img/project/blockexplorer/api.jpg'];
+        imgadr= ['./img/project/blockexplorer/home.jpg','./img/project/blockexplorer/blocks.jpg','./img/project/blockexplorer/status.jpg','./img/project/blockexplorer/api.jpg'];
         headArray= ['HOME','BLOCKS', 'STATUS', 'JSON API'];
         paraArray= ['Bitcore Insight Block Explorer Main Page.',
             'Current Cryptocurrency view all Blocks', 
@@ -27,7 +27,7 @@ function parserTitle(){
         
     }
     else if (now_index == 1){        
-        imgadr= ['img/project/miningpool/login.jpg','img/project/miningpool/home.jpg','img/project/miningpool/dashboard.jpg','img/project/miningpool/api.jpg'];
+        imgadr= ['./img/project/miningpool/login.jpg','./img/project/miningpool/home.jpg','./img/project/miningpool/dashboard.jpg','./img/project/miningpool/api.jpg'];
         headArray= ['LOGIN','HOME', 'DASHBOARD', 'JSON API'];
         paraArray= ['PPLNS Mining Pool Login Page.',
             'PPLNS Mining Pool Home(index)', 
