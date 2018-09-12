@@ -1,5 +1,5 @@
 //Static
-var title_list = ["blockexplorer","miningpool","unusedcssremove","automatedpricetoi.c.o","vulnerabilitychecktool","websitecheckvulnerabilities","kakaotalkrestoretool","coupangsellerautomation","blogautopostaftercrawl","autoincreaseviewstoc.g.v"];
+title_list = ["blockexplorer","miningpool","unusedcssremove","automatedpricetoi.c.o","vulnerabilitychecktool","websitecheckvulnerabilities","kakaotalkrestoretool","coupangsellerautomation","blogautopostaftercrawl","autoincreaseviewstoc.g.v"];
 var cnt= 0;
 var timer;
 var imgadr;
@@ -24,6 +24,7 @@ function parserTitle(){
             'Current Cryptocurrency view all Blocks', 
             'Current Cryptocurrency view information Status',
             'Insight-api'];
+        changeSummarize(now_index);
         
     }
     else if (now_index == 1){        
@@ -33,9 +34,38 @@ function parserTitle(){
             'PPLNS Mining Pool Home(index)', 
             'PPLNS Mining Pool and Miner Status',
             'PPLNS Global Status'];
+        changeSummarize(now_index);
+    }
+    else{
+        imgadr=['./img/project/image-not-found.jpg']
+        headArray = ['Not Found!']
+        paraArray = ['Image File does not found...']
     }
 }
+function changeSummarize(now){
+    $(".summarize").each(function(index){
+        if (index != now){
+            $(this).css({"display":"none"});
+        }
+        else{
+            $(this).css({"display":"flex"});
+            mw = $(this).children("p:nth-child(1)").outerWidth(true);
+        }
+    });
+    $(".summarize2").each(function(index,item){
+        if( index != now) {
+            $(item).css({"display":"none"});
+        }
+        else{
+            $(item).css({"display":"flex"});
+            var nw = $(item).children("p:nth-child(1)").outerWidth();
+            var margin = mw - nw;
+            $(item).children("p:nth-child(1)").css({"margin-right":margin});
+        }
+    });
+}
 
+// Slider
 function sliderTimer()
 {
   timer= setInterval(slider, 2500);

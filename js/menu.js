@@ -17,11 +17,9 @@ $(document).ready(function(){
         }
     });
     $(".viewer-close").on("click",function(){
-//        $(".directory").toggleClass("active");
         $(".viewer").toggle('200');
-//        $(".viewer-title-bar").toggle('300');
     });
-    $(".close").on("click",function(){
+    $(".closed").on("click",function(){
         $(".directory").toggleClass("active");
         $(".content").toggle('200');
         $(".title-bar").toggle('300');
