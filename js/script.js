@@ -36,6 +36,9 @@ function parserTitle(){
             'PPLNS Global Status'];
         changeSummarize(now_index);
     }
+    else if (now_index == 2){
+        changeSummarize(now_index);
+    }
     else{
         imgadr=['./img/project/image-not-found.jpg']
         headArray = ['Not Found!']
@@ -58,9 +61,9 @@ function changeSummarize(now){
         }
         else{
             $(item).css({"display":"flex"});
-            var nw = $(item).children("p:nth-child(1)").outerWidth();
-            var margin = mw - nw;
-            $(item).children("p:nth-child(1)").css({"margin-right":margin});
+            if ($(item).children('p').length < 3){
+                $(item).children("p:nth-child(2)").css({"flex":"2.2"});
+            }
         }
     });
 }
