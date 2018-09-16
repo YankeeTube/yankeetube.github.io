@@ -39,6 +39,15 @@ function parserTitle(){
     else if (now_index == 2){
         changeSummarize(now_index);
     }
+    else if (now_index == 3){
+        changeSummarize(now_index);
+    }
+    else if (now_index == 4){
+        changeSummarize(now_index);
+    }
+    else if (now_index == 5){
+        changeSummarize(now_index);
+    }
     else{
         imgadr=['./img/project/image-not-found.jpg']
         headArray = ['Not Found!']

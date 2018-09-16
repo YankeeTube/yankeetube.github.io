@@ -112,6 +112,9 @@
     margin: 0 auto 0 0;
     color: rgba(0,0,0,0.6);
     font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .same-summarize >p:nth-child(1){
     flex:0.8;
@@ -126,6 +129,11 @@
     font-size: 18px;
     color: #000;
     margin-left: 1em;
+}
+.same-summarize2 > p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .summarize2 > p:nth-child(1){
 /*    margin:0 4.4em 0 0;*/
@@ -269,4 +277,7 @@
     stroke-width: 4;
     stroke-dasharray: 196, 543;
     stroke-dashoffset: 437;
+}
+.descript > ul > li > a{
+    cursor: pointer;
 }

@@ -10,6 +10,7 @@
         <link rel="stylesheet" type="text/css" href="./css/home.css">
         <link rel="stylesheet" type="text/css" href="./css/icon.css">
         <link rel="stylesheet" type="text/css" href="./css/view.css">
+        <link rel="stylesheet" type="text/css" href="./css/pdf.css">
         <link rel="stylesheet" type="text/css" href="./css/slide.css">
         <link rel="stylesheet" type="text/css" href="./css/overclass.css">
         <link rel="stylesheet" href="./css/font-awesome.min.css">
@@ -31,6 +32,7 @@
         <script src="./js/device.js"></script>
         <script src="./js/viewer.js"></script>
         <script src="./js/desktop.js"></script>
+        <script src="./js/pdfview.js"></script>
     </head>
     <body onload="sliderTimer()">
     <div class="header">
@@ -133,11 +135,35 @@
                                 <p>Date of production<span>2018.03 ~ 2018.08</span></p>
                             </div>
                             <div class="same-summarize summarize">
-                                <p>Project <span>Unused CSS</span></p>
+                                <p>Project <span>CSS Remover</span></p>
                                 <p>FROM
                                     <span>yuae Jeon</span>
                                 </p>
                                 <p>Date of production<span>2018.09 ~</span></p>
+                            </div>
+                            <div class="same-summarize summarize">
+                                <p>Project <span>I.C.O AUTO</span></p>
+                                <p>FROM
+                                    <span>
+                                        <a href="http://fourthblockchain.org" target="_blank">SOOMPAY KOREA
+                                        </a>
+                                    </span>
+                                </p>
+                                <p>Date of production<span>2018.01</span></p>
+                            </div>
+                            <div class="same-summarize summarize">
+                                <p>Project <span><a href="https://github.com/YankeeTube/Check-Win" target="_blank">Check Win</a></span></p>
+                                <p>FROM
+                                    <span>Personal</span>
+                                </p>
+                                <p>Date of production<span>2017.05 ~ 11</span></p>
+                            </div>
+                            <div class="same-summarize summarize">
+                                <p>Project <span>Site Check Vulner</span></p>
+                                <p>FROM
+                                    <span><a href="http://kbu.ac.kr" target="_blank">K.B.U</a></span>
+                                </p>
+                                <p>Date of production<span>2017.04 ~ 05</span></p>
                             </div>
                             <div class="same-summarize summarize2">
                                 <p>Position<span>Engineer</span></p>
@@ -151,6 +177,19 @@
                             <div class="same-summarize summarize2">
                                 <p>Position<span>Engineer</span></p>
                                 <p>ROLE<span>Exclusive development</span></p>
+                            </div>
+                            <div class="same-summarize summarize2">
+                                <p>Position<span>Engineer</span></p>
+                                <p>ROLE<span>Planning and development</span></p>
+                            </div>
+                            <div class="same-summarize summarize2">
+                                <p>Position<span>Engineer</span></p>
+                                <p>ROLE<span>Planning and development</span></p>
+                                <p> </p>
+                            </div>
+                            <div class="same-summarize summarize2">
+                                <p>Position<span>Engineer</span></p>
+                                <p>ROLE<span>Plan, build, modify, check, report</span></p>
                             </div>
                             <div class="moreBtn">
                                   <a href="javascript:void(0);" class="morebutton">
@@ -396,9 +435,239 @@
                                     <p>media 쿼리가 제대로 적용이 안되는 문제로 인해 !important를 강제로 설정하는 옵션을 선택하여 현상 유지가 가능하며, 프레임워크를 사용하여 class, id 등을 추가할 수 있기에 사용자 강제 예외 추가도 가능합니다.<p/>
                                 </div>
                             </div>
+                            <div class="overClass">
+                               <div class="someinfo">
+                                    <div class="info-category">
+                                        <div>
+                                            <p>Category</p>
+                                        </div>
+                                        <div>
+                                            <p>Satisfaction</p>
+                                        </div>
+                                        <div>
+                                            <p>Skill</p>
+                                        </div>
+                                    </div>
+                                    <div class="info-contents">
+                                        <div>
+                                            <p>Python</p>
+                                        </div>
+                                        <div>
+                                            <p>★★★★☆</p>
+                                        </div>
+                                        <div>
+                                            <p>Selenium, win32api, pillow, fbchat</p>
+                                        </div>                        
+                                    </div>
+                                    <div class="info-contents">
+                                        <div>
+                                            <p>CSS</p>
+                                        </div>
+                                        <div>
+                                            <p>★★★★☆</p>
+                                        </div>
+                                        <div>
+                                            <p>Crawling</p>
+                                        </div>                        
+                                    </div>
+                                    <div class="info-contents">
+                                        <div>
+                                            <p>HTML</p>
+                                        </div>
+                                        <div>
+                                            <p>★★★★★</p>
+                                        </div>
+                                        <div>
+                                            <p>Crawling</p>
+                                        </div>                        
+                                    </div>
+                                </div>
+                                <div class="descript">
+                                    <p>Description</p>
+                                    <p>Planning and development</p>
+                                    <p><a href="http://fourthblockchain.org" target="_blank">SOOMPAY Korea</a> 의 자사 코인인 SOOM Coin I.C.O의 원활한 진행을 위해서 Ethereum Coin 가격과 달러 환율 정보를 매일 같은시간 기준 측정을 위해 자동화 한 프로그램입니다.</p>
+                                    <br/>
+                                    <p>Selenium을 활용하여 <a href="https://coinmarketcap.com/" target="_blank">Coinmarketcap</a>에서 제공되는 Ethereum Coin 가격을 파싱하고 캡쳐하여 자동 저장합니다.</p>
+                                    <p>Selenium 자체의 느린 문제로 인하여, Javascript 기능을 사용하지 않는 옵션을 추가하였습니다.</p>
+                                    <br/>
+                                    <p>Windows 10 레드스톤2 업데이트 이후 패치시마다, 빠른 시작 켜기가 자동으로 설정되는 문제가 있어, 이 문제를 해결하기 위해, vbs 스크립트와 배치파일을 이용하여 자동화 하였습니다.  <a href="http://gmyankee.tistory.com/117" target="_blank">[보러 가기]</a></p>
+                                    <br/>
+                                    <p>해당 정보는 Facebook Messenger를 통해 스크린샷과 가격정보를 계산하여 전달하는 방식을 채택하였습니다.<p/>
+                                </div>
+                            </div>
+                            <div class="overClass">
+                               <div class="someinfo">
+                                    <div class="info-category">
+                                        <div>
+                                            <p>Category</p>
+                                        </div>
+                                        <div>
+                                            <p>Satisfaction</p>
+                                        </div>
+                                        <div>
+                                            <p>Skill</p>
+                                        </div>
+                                    </div>
+                                   <div class="info-contents">
+                                        <div>
+                                            <p>Windows</p>
+                                        </div>
+                                        <div>
+                                            <p>★★★★☆</p>
+                                        </div>
+                                        <div>
+                                            <p>Registry, Add function, group policy, command</p>
+                                        </div>                        
+                                    </div>
+                                    <div class="info-contents">
+                                        <div>
+                                            <p>Python</p>
+                                        </div>
+                                        <div>
+                                            <p>★★★★☆</p>
+                                        </div>
+                                        <div>
+                                            <p>win32api, winreg</p>
+                                        </div>                        
+                                    </div>
+                                    <div class="info-contents">
+                                        <div>
+                                            <p>CSS</p>
+                                        </div>
+                                        <div>
+                                            <p>★★☆☆☆</p>
+                                        </div>
+                                        <div>
+                                            <p>Custom</p>
+                                        </div>                        
+                                    </div>
+                                    <div class="info-contents">
+                                        <div>
+                                            <p>HTML</p>
+                                        </div>
+                                        <div>
+                                            <p>★★★☆☆</p>
+                                        </div>
+                                        <div>
+                                            <p>Custom</p>
+                                        </div>                        
+                                    </div>
+                                </div>
+                                <div class="descript">
+                                    <p>Description</p>
+                                    <p>Planning and development</p>
+                                    <p>주요 정보 통신 기반 시설 Windows 주요 취약점 점검 82개 항목을 대상으로 개발한 자동화된 점검 스크립트 입니다.</p>
+                                    <br/>
+                                    <p>실행 테스트는 현재 PC 제품군 Windows XP, 7, 8.1, 10에서 동작 확인하였으며,</p>
+                                    <p>서버 제품군에서는 Windows Server 2008, 2012 RS2, 2016에서 진행하였습니다.</p>
+                                    <br/>
+                                    <p>취약점 점검 수행 후 결과 내용을 Excel 파일과 HTML 파일로 생성하며, <br/>사용자 PC 성능에 따라 수행 시간이 지연될 수 있습니다.</p>
+                                    <br/>
+                                    <p>추가 예정 기능은 다음과 같습니다.</p>
+                                    <ul>
+                                        <li>- Linux Version( Debian, Redhat, Arch )</li>
+                                        <li>- CSV 파일 생성 / GUI 및 광고 추가</li>
+                                        <li>- 해당 취약점에 대한 설명 / 취약 상태 발견시 조치 선택적 유무</li>
+                                        <li>- 왜 취약으로 판단되는지에 대한 Description</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="overClass">
+                               <div class="someinfo">
+                                    <div class="info-category">
+                                        <div>
+                                            <p>Category</p>
+                                        </div>
+                                        <div>
+                                            <p>Satisfaction</p>
+                                        </div>
+                                        <div>
+                                            <p>Skill</p>
+                                        </div>
+                                    </div>
+                                   <div class="info-contents">
+                                        <div>
+                                            <p>Windows XP</p>
+                                        </div>
+                                        <div>
+                                            <p>★★★★☆</p>
+                                        </div>
+                                        <div>
+                                            <p>Apache Server</p>
+                                        </div>                        
+                                    </div>
+                                    <div class="info-contents">
+                                        <div>
+                                            <p>Python</p>
+                                        </div>
+                                        <div>
+                                            <p>★★★★☆</p>
+                                        </div>
+                                        <div>
+                                            <p>Develop to Stress Attack Tools</p>
+                                        </div>                        
+                                    </div>
+                                    <div class="info-contents">
+                                        <div>
+                                            <p>Php</p>
+                                        </div>
+                                        <div>
+                                            <p>★★★★☆</p>
+                                        </div>
+                                        <div>
+                                            <p>Custom Build code(Remove Secure Code)</p>
+                                        </div>                        
+                                    </div>
+                                    <div class="info-contents">
+                                        <div>
+                                            <p>JS</p>
+                                        </div>
+                                        <div>
+                                            <p>★★★☆☆</p>
+                                        </div>
+                                        <div>
+                                            <p>Custom Build code(Remove Secure Code)</p>
+                                        </div>                        
+                                    </div>
+                                </div>
+                                <div class="descript">
+                                    <p>Description</p>
+                                    <p>Plan, build, modify, check, report</p>
+                                    <p><a href="https://kbu.ac.kr" target="_blank">경복대학교</a>에서 졸업 작품으로 진행한 웹 사이트 취약점 점검 입니다.</p>
+                                    <br/>
+                                    <p>Server : Vmware on Windows XP // Builder : Morning mall 2004 / APM</p>
+                                    <p>취약점 점검 항목 선정은 주요정보통신기반 시설, 국정원 8대 취약점, OWASP 10 - 2016을 바탕으로 18개 항목 선정</p>
+                                    <br/>
+                                    <p>점검은 자동화와 수동 2가지 방식으로 진행되었으며, 사전에 일부 시큐어 코드 및 서버 보안 설정을 제거하여 진행한 모의 취약점 점검 진단 입니다.</p>
+                                    <br/>
+                                    <p>결과물은 다음과 같습니다.</p>
+                                    <ul>
+                                        <li>계획서 : <a class="plan_view">View</a></li>
+                                        <li>보고서 : <a class="report_view">View</a></li>
+                                        <li>비디오 : <a class="video_view">View</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="pdfview">
+                <div class="pdf-title-bar">
+                    <div>
+                        <i class="fas fa-laptop-code title-icon"></i>
+                        <p>Projects</p>
+                    </div>
+                    <div class="browser-btn">
+                        <div class="same-cls pdf-maximize"></div>
+                        <div class="same-cls pdf-close"></div>
+                    </div>
+                </div>
+                <div class="pdfcontent">
+                    
+                </div>
+                    <iframe class="contentviewer" width="100%" height="100%"></iframe>
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/z4DhOfSASco" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>
             <div class="content">
                 <div class="title-bar">
@@ -463,8 +732,6 @@
                                 <i class="fas fa-film"></i>
                                 <p>Auto Increase views to C.G.V</p>
                             </div>
-
-                            
                         </div>
                         <div style="display: none">
                             <div>
