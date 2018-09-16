@@ -37,15 +37,36 @@ function parserTitle(){
         changeSummarize(now_index);
     }
     else if (now_index == 2){
+        imgadr= ['./img/project/cssremover/start.png','./img/project/cssremover/important.png','./img/project/cssremover/sizecompare.png','./img/project/cssremover/result.png'];
+        headArray= ['SIMPLE SCRIPT','IMPORTANT', 'SIZE COMP', 'WHITE SPACE'];
+        paraArray= ['Unused CSS Remover',
+            '@media query !important;', 
+            'Reduce capacity',
+            'Remove all white Space'];
         changeSummarize(now_index);
     }
     else if (now_index == 3){
+        imgadr=['./img/project/image-not-found.jpg']
+        headArray = ['Not Found!']
+        paraArray = ['Image File does not found...']
         changeSummarize(now_index);
     }
     else if (now_index == 4){
+        imgadr= ['./img/project/checkwin/start.png','./img/project/checkwin/function.png','./img/project/checkwin/excel.png','./img/project/checkwin/html.jpg'];
+        headArray= ['SIMPLE SCRIPT','VUNLER CHECK FUNC', 'RESULT ON EXCEL', 'RESULT ON HTML'];
+        paraArray= ['Windows Vulnerability Check Tools',
+            'Part of the function of the major information communication infrastructure vulnerability items', 
+            'If you use ssd, your will get have a report in 5 seconds!',
+            'No Excel? We also make html!'];
         changeSummarize(now_index);
     }
     else if (now_index == 5){
+        imgadr= ['./img/project/sitevulner/checklist.png','./img/project/sitevulner/fish.png','./img/project/sitevulner/fish2.png','./img/project/sitevulner/result.png'];
+        headArray= ['CHECK LIST','SESSION SAVE SCRIPT', 'SESSION HIJACKING', 'VUNLER RESULT'];
+        paraArray= ['Web Site vunlerability Check list.',
+            'Session Storage Scripts Using php!', 
+            'Session hijacking on using js!',
+            'part of the result'];
         changeSummarize(now_index);
     }
     else{
