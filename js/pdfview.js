@@ -15,5 +15,7 @@ $(document).ready(function(){
     });
     $(".pdf-close").on("click",function(){
         $(".pdfview").fadeToggle('fast');
+        $(".videoviewer").hide('fast');
+        $(".contentviewer").hide('fast');
     });
 });
