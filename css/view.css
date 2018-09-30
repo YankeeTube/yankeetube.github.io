@@ -102,7 +102,7 @@
     margin: 0 5% 0 5%;
     width:90%;
     height: 50px;
-    display: none;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
@@ -130,6 +130,9 @@
     color: #000;
     margin-left: 1em;
 }
+.same-summarize2{
+    display: flex;
+}
 .same-summarize2 > p{
     white-space: nowrap;
     overflow: hidden;
@@ -140,7 +143,7 @@
     flex:0.8;
 }
 .summarize2 > p:nth-child(2){
-    flex:1;
+    flex:2.2;
 }
 .summarize2 > p:nth-child(3){
     flex:1.2;

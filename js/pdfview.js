@@ -1,4 +1,14 @@
+buffer = false;
 $(document).ready(function(){
+    setInterval(pdf,1000);
+    if (bufffer == true){
+        clearInterval(pdf);
+    }
+    
+});
+
+function pdf(){
+    bufffer = true;
     $(".plan_view").on("click",function(){
         $(".contentviewer").attr("src", "https://drive.google.com/file/d/1VFII8DD7Mo4h0zN8PKWxABIKHK5YNTo2/preview");
         $(".contentviewer").fadeToggle('slow');
@@ -14,8 +24,9 @@ $(document).ready(function(){
         $(".videoviewer").fadeToggle('slow');
     });
     $(".pdf-close").on("click",function(){
-        $(".pdfview").fadeToggle('fast');
+        $(".pdfview").hide('fast');
         $(".videoviewer").hide('fast');
         $(".contentviewer").hide('fast');
+        buffer = false;
     });
-});
+}

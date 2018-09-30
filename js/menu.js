@@ -17,7 +17,7 @@ $(document).ready(function(){
         }
     });
     $(".viewer-close").on("click",function(){
-        $(".viewer").toggle('200');
+        $(".viewer").fadeToggle('200');
     });
     $(".closed").on("click",function(){
         $(".directory").toggleClass("active");
