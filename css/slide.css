@@ -3,6 +3,12 @@
   background-color:#1a212e;
 }
 */
+#slider{
+    background-size: cover;
+}
+#slider.active{
+    background-size: contain;
+}
 .slider .indicators .indicator-item {
   background-color: #666666;
   border: 3px solid #ffffff;

@@ -47,10 +47,9 @@ function parserTitle(){
         changeSummarize(now_index);
     }
     else if (now_index == 3){
-        imgadr=['./img/project/image-not-found.jpg']
-        headArray = ['Not Found!']
-        paraArray = ['Image File does not found...']
-        changeSummarize(now_index);
+         imgadr=['./img/project/ico/sourcecode.png','./img/project/ico/coinmarket.jpg','./img/project/ico/naver.jpg'];
+        headArray = ['PART OF SOURCE CODE','Ethereum Price Parser','Exchange Rate Capture'];
+        paraArray = ['I.C.O Evidence AutoScript','Ethereum Coin Crawl and Capture','Naver Exchange Rate Crawl and capture'];
     }
     else if (now_index == 4){
         imgadr= ['./img/project/checkwin/start.PNG','./img/project/checkwin/function.PNG','./img/project/checkwin/excel.PNG','./img/project/checkwin/html.jpg'];

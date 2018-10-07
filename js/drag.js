@@ -17,6 +17,8 @@ $(document).ready(function(){
         $(this).parents("div.viewer-title-bar").toggleClass("active");
         $("div.sub-content").toggleClass("active");
         $("div.tree").toggleClass("active");
+        $("#slider").toggleClass('active');
+        $(".cover-slide").toggleClass('active');
     });
     $(".viewer-minimize").on("click",function(){
         $(".viewer").toggle('200');

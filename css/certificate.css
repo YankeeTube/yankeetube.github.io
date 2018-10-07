@@ -1,0 +1,6 @@
+.certificateBox{
+    margin: 0 5% 0 5%;
+    width:90%;
+    height: calc(100% - 25px);
+    position: relative;
+}
