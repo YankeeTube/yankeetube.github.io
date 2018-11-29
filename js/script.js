@@ -1,5 +1,5 @@
 //Static
-title_list = ["blockexplorer","miningpool","unusedcssremove","automatedpricetoi.c.o","vulnerabilitychecktool","websitecheckvulnerabilities","kakaotalkrestoretool","coupangsellerautomation","blogautopostaftercrawl","autoincreaseviewstoc.g.v"];
+title_list = ["blockexplorer","miningpool","unusedcssremove","automatedpricetoi.c.o","vulnerabilitychecktool","websitecheckvulnerabilities","kakaotalkrestoretool","coupangsellerautomation","blogautopostaftercrawl","autoincreaseviewstoc.g.v","soompay"];
 var cnt= 0;
 var timer;
 var imgadr;
@@ -14,8 +14,8 @@ $(document).ready(function(){
 
 function parserTitle(){
     var title = $(".viewer-title-bar > div > p").text().replace(/ /gi, "").toLowerCase();
-
     var now_index = title_list.indexOf($(".viewer-title-bar > div > p").text().replace(/ /gi, "").toLowerCase());
+
     if (now_index == buf){
         return;
     }
@@ -50,6 +50,7 @@ function parserTitle(){
          imgadr=['./img/project/ico/sourcecode.png','./img/project/ico/coinmarket.jpg','./img/project/ico/naver.jpg'];
         headArray = ['PART OF SOURCE CODE','Ethereum Price Parser','Exchange Rate Capture'];
         paraArray = ['I.C.O Evidence AutoScript','Ethereum Coin Crawl and Capture','Naver Exchange Rate Crawl and capture'];
+        changeSummarize(now_index);
     }
     else if (now_index == 4){
         imgadr= ['./img/project/checkwin/start.PNG','./img/project/checkwin/function.PNG','./img/project/checkwin/excel.PNG','./img/project/checkwin/html.jpg'];
@@ -130,7 +131,7 @@ function changeSummarize(now){
         
         "Blog auto Post after crawl",
         
-        "Auto Increase view to C.G.V"
+        "Auto Increase view to C.G.V",
     ];
     
     var from = [
@@ -238,7 +239,7 @@ function overclass(numb){
     description(numb);
 }
 function description(numb){
-    var des = ["<p>Description</p><p>Block Explorer Custom && Error Handling</p><p><a href='http://fourthblockchain.org' target='_blank'>SOOMPAY Korea</a> 의 자사 코인인 SOOM Coin의 블록 생성 및 거래 추적등을 위해 개발한 블록 탐색기 입니다.</p><p>Bitpay에서 오픈소스 MIT 라이센스로 제공하는<a href='https://github.com/bitpay/bitcore' target='_blank'>Bitcore</a>와 <a href='https://github.com/bitpay/insight-api' target='_blank'>Insight</a>를 활용하여 개발하였습니다.</p><br/><p>촉박한 작업기간과 Node JS를 잘 모르는 극단적인 상황이었기에 더욱 애착이 느껴지는 작품입니다.</p><br/><p>공개된 코드상에는 이미 처리되지 않은 자잘한 오류조차 많았으며, 일단 붙이는 것에 초점을 두었으며,</p><p>Insight에서 제공하는 로컬 실행 동기화 방식이 아닌 Google 검색을 통해 얻은 정보로 RPC 연결 방식을 지향하였고</p><p>예상보다 빠른 작업속도로 인하여 Insight-UI 자체의 고질적 문제인 특정 해상도 이하로 떨어질 경우 첫번째 지갑주소가 누락되는 현상을 수정하였습니다.</p><p>UI는 해당되는 텍스트를 변경하여 진행한 뒤, 같은 내용 다른느낌을 주기 위해 색상 및 로고를 변경하였습니다.</p>",
+    var des = ['<h1><a id="Block_Explorer_0"></a>Block Explorer</h1><p>Visit : <a href="http://explorer.soomcoin.net/insight" target="_blank">Soom Explorer</a></p><h3><a id="_Summary_Tech_4"></a>* Summary Tech</h3><ul><li>Customizing</li><li>Trouble Shooting</li><li>Manage to Docker Container</li></ul><h3><a id="_requirements_9"></a>* requirements</h3><ul><li>nvm 0.3+</li><li>npm 8+</li><li>nodejs 4+</li><li>python 3.*</li><li>sqlite3</li><li>bitcore-lib</li><li>insight-api</li><li>insight-ui</li></ul><h3><a id="_Description_19"></a>* Description</h3><blockquote><p><a href="http://fourthblockchain.org" target="_blank">Soompay</a>의 자사 코인인 SOOM Coin은<br>블록 생성 및 거래 추적등을 직관적으로 보기 위하여 개발한 블록 탐색기 입니다.<br>Bitpay에서 오픈소스 MIT 라이센스로 제공하는 <a href="https://github.com/bitpay/bitcore" target="_blank">Bitcore</a>와 <a href="https://github.com/bitpay/insight-api" target="_blank">Insight</a>를 사용하여 개발하였습니다.<br>촉박한 작업기간과 Node.JS를 처음 접해보는 극단적인 상황이었기에 더욱 애착이 느껴지는 작품입니다.</p></blockquote><blockquote><p>공개된 <a href="https://github.com/bitpay/insight-api" target="_blank">Insight</a> 코드상에는 이미 처리되지 않은 자잘한 오류조차 많았으며,<br>일단 붙이는 것에 초점을 맞추었고, Insight에서 제공하는 로컬 데몬 실행 방식이 아닌<br>Google 검색을 통해 얻은 정보로 JSON-RPC 통신 방식을 채택하였습니다.</p></blockquote><blockquote><p>예상보다 빠른 작업속도로 인하여 Insight-UI 버그로 알려진<br>특정 해상도 이하보다 낮을 경우 첫번째 지갑주소가 누락되는 현상을 수정하였습니다.<br>UI는 해당되는 텍스트를 변경하여 진행한 뒤, 자사의 디자인과 느낌을 살리기 위해<br>일부 CSS를 변경하였습니다.</p></blockquote><p>company wants to keep this source code private.</p>',
     "<p>Description</p><p>Exclusive development</p><p><a href='http://fourthblockchain.org' target='_blank'>SOOMPAY Korea</a> 의 자사 코인인 SOOM Coin의 블록 채굴 및 모니터링을 위해 개발한 마이닝풀과 웹 입니다.</p><p>Open Source를 사용하여 <a href='https://en.bitcoin.it/wiki/Comparison_of_mining_pools' target='_blank'>PPLNS</a>기반의 마이닝 풀을 개발하였으며, 관련 코드는 비공개로 유치하고 있습니다.</p><br/><p>블록체인을 2014년 이론으로만 접하다가 해당 분야 개발에 첫발을 내딛는 뜻깊은 시작점이었습니다, </p><br/><p>처음에는 일반 블록체인과는 개념이 조금 다른 PPLNS를 사용하여 시행착오도 많았지만, </p><p>채굴에 성공 한 후 여러 설정 값들을 변경하며 Bitcoin 계열의 1세대 코인은 대체로 연결할 수 있었습니다.</p><p>사용하는 오픈소스에서도 웹 모니터링을 지원하였지만, 자사에서 사용하기에는 원하지 않는 부분도 있었고, <br/>로그인 기능을 지원하기 위하여 Django를 이용하여 새로 개발하게 되었습니다.</p><br/><p>UI는 yuae Jeon 디자이너 님께서 디자인 해주셨습니다.</p>",
     "<p>Description</p><p>Exclusive development</p><p>CSS Optimze Tool 이나 사이트를 이용했을 때 사용의 제약이 생각보다 많거나, 제대로 처리되지 않는 불안정한 효과로 인해 직접 개발하게 된 유틸리티입니다.</p><br/><p>CSS Utils를 사용하여 처음 CSS 파일을 파싱해왔을때 calc((100% - 100px) / 2) 와 같이 정규식을 이용한 파싱 방식을 채택하여, 괄호가 두번 들어가면 캐치가 안되는 현상이 있었고,</p><p>CSS Parser를 사용하여 파싱을 해오면 더블 괄호의 문제는 해결되지만 @media query인 CSS3 문법 파싱이 안되는 문제로 인하여 결국 두가지를 사용하여 Merge하는 방법을 채택했습니다.</p><br/><p>Merge를 했음에도 불구하고, @media 쿼리 내부에 존재하는 더블괄호는 파싱이 안되는 현상이 존재합니다. <br/>추후 업데이트를 통해 발전 시켜나갈 예정입니다.</p><p>media 쿼리가 제대로 적용이 안되는 문제로 인해 !important를 강제로 설정하는 옵션을 선택하여 현상 유지가 가능하며, 프레임워크를 사용하여 class, id 등을 추가할 수 있기에 사용자 강제 예외 추가도 가능합니다.<p/>",
     "<p>Description</p><p>Planning and development</p><p><a href='http://fourthblockchain.org' target='_blank'>SOOMPAY Korea</a> 의 자사 코인인 SOOM Coin I.C.O의 원활한 진행을 위해서 Ethereum Coin 가격과 달러 환율 정보를 매일 같은시간 기준 측정을 위해 자동화 한 프로그램입니다.</p><br/><p>Selenium을 활용하여 <a href='https://coinmarketcap.com/' target='_blank'>Coinmarketcap</a>에서 제공되는 Ethereum Coin 가격을 파싱하고 캡쳐하여 자동 저장합니다.</p><p>Selenium 자체의 느린 문제로 인하여, Javascript 기능을 사용하지 않는 옵션을 추가하였습니다.</p><br/><p>Windows 10 레드스톤2 업데이트 이후 패치시마다, 빠른 시작 켜기가 자동으로 설정되는 문제가 있어, 이 문제를 해결하기 위해, vbs 스크립트와 배치파일을 이용하여 자동화 하였습니다.  <a href='http://gmyankee.tistory.com/117' target='_blank'>[보러 가기]</a></p><br/><p>해당 정보는 Facebook Messenger를 통해 스크린샷과 가격정보를 계산하여 전달하는 방식을 채택하였습니다.<p/>",
@@ -265,8 +266,11 @@ function sliderTimer()
 function slider()
 {
   cnt++;
-  if(cnt == imgadr.length)
+  if(cnt == imgadr.length){
     cnt= 0;
+  }else if(cnt > imgadr.length){
+      cnt = 0;
+  }
 
   var slider= document.getElementById('slider');
   slider.style.backgroundImage= "url(\'"+imgadr[cnt]+"\')";
@@ -278,9 +282,12 @@ function next()
 {
   clearInterval(timer);
   
-  cnt++; 
-  if(cnt == imgadr.length)
+  cnt++;
+  if(cnt == imgadr.length){
     cnt= 0;
+  }else if(cnt > imgadr.length){
+      cnt = 0;
+  }
     
   var slider= document.getElementById('slider');
   slider.style.backgroundImage= "url(\'"+imgadr[cnt]+"\')";
