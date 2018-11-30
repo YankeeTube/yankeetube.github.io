@@ -40,6 +40,9 @@ $(document).ready(function(){
             divChange(2);
             certifiChange(cert_list.indexOf($(this).text().replace(/ /gi, "").replace(/\n/gi,"").toLowerCase()));
         }
+        else if ($(this).hasClass('type4') == true){
+            divChange(3);
+        }
     else{
         divChange(-1);
     }
@@ -60,7 +63,6 @@ function divChange(numb){
     });
 }
 function certifiChange(numb){
-    console.log(numb);
     var cert_thumb = [
         "<iframe src='https://drive.google.com/file/d/1JWII7LuGyXnmbb9-2ICv16kA7k3DQK3-/preview' width='100%' height='100%'></iframe>",
         
@@ -82,7 +84,6 @@ function certifiChange(numb){
     console.log(cert_thumb[numb]);
     $(".thumbnail").css({"background":"url('')"});
     $(".thumbnail").html(cert_thumb[numb]);
-//    $(".thumbnail").css({"background":"url(" + cert_thumb[numb] + ")", 'background-repeat' : 'no-repeat', 'background-position':'center center','background-size':"contain"});
     
     var cert_name = ["디지털 포렌식 전문가 2급","정보보안 산업기사","정보처리 산업기사","Cisco Certification Network Associate","네트워크 관리사 2급", "PC Master(정비사)","E-Test Professionals 엑셀","정보기술자격(ITQ) 한글 B급","정보기술자격(ITQ) Excel B급","정보기술자격(ITQ) PowerPoint C급"];
     var cert_division = ["필기","합격","합격","합격","합격","합격","합격","합격","합격","합격"];
@@ -105,7 +106,7 @@ function eduChange(numb){
     $($($(".line-1")[2]).children('span')[1]).text(edu_division[numb]);
     $($($(".line-1")[3]).children('span')[1]).text(edu_period[numb]);
     
-    var edu_thumb = ["../img/creditBank.png","../img/kbu.jpeg","../img/ggmt.jpg"];
+    var edu_thumb = ["./img/creditBank.png","./img/kbu.jpeg","./img/ggmt.jpg"];
     $(".thumbnail").empty();
     $(".thumbnail").css({"background":"url(" + edu_thumb[numb] + ")", 'background-repeat' : 'no-repeat', 'background-position':'center center','background-size':"contain"});
 }

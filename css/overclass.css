@@ -32,6 +32,7 @@
 .descript > ul{
     margin-top: 10px;
     font-size: 20px;
+    list-style:square;
 }
 .descript > ul > li{
     font-size: 1.5rem;
@@ -40,6 +41,9 @@
     color: #000;
     font-size: 1.5rem;
     font-family: Georgia,Cambria,serif;
+}
+.descript > blockquote > ul > li{
+    font-size: 1.5rem;
 }
 
 .someinfo{
